@@ -1,0 +1,457 @@
+{
+  "id": "db555334-3377-42d4-9e95-68900dd9ee69",
+  "version": "2.0",
+  "name": "KSRTC",
+  "url": "https://ksrtc.in",
+  "tests": [{
+    "id": "bd0ea135-2390-4a3b-9aaa-cba2c7dc0d7e",
+    "name": "signin(text)",
+    "commands": [{
+      "id": "a474d023-677e-4c5b-8c33-67a7f6e85d91",
+      "comment": "",
+      "command": "open",
+      "target": "/oprs-web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ad27d4df-0ef6-4cad-b11f-7c92f1397ab7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x660",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1e5b252a-1cb6-4a99-98db-e1af0fb0f796",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.head-first-link img",
+      "targets": [
+        ["css=.head-first-link img", "css:finder"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e4b7d9b-c358-425e-a553-e6b2653a97a8",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.head-first-link img",
+      "targets": [
+        ["css=.head-first-link img", "css:finder"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "56012b06-5ee8-4aba-8749-e290964e90bc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-xs-12:nth-child(1)",
+      "targets": [
+        ["css=.col-xs-12:nth-child(1)", "css:finder"],
+        ["xpath=//div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f32132db-ca89-4d6a-8971-c11b74a16b10",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Sign In",
+      "targets": [
+        ["linkText=Sign In", "linkText"],
+        ["css=.fl-right > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign In')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/oprs-web/login/show.do')]", "xpath:href"],
+        ["xpath=//div/div/div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign In')]", "xpath:innerText"]
+      ],
+      "value": "Sign In"
+    }, {
+      "id": "6581d352-1559-46c4-9eaa-d9d93fc771b5",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Sign In",
+      "targets": [
+        ["linkText=Sign In", "linkText"],
+        ["css=.fl-right > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign In')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/oprs-web/login/show.do')]", "xpath:href"],
+        ["xpath=//div/div/div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign In')]", "xpath:innerText"]
+      ],
+      "value": "Sign In"
+    }]
+  }, {
+    "id": "f3049195-926e-4cb5-aee0-637d5dd70d4c",
+    "name": "username(present)",
+    "commands": [{
+      "id": "09d6198e-81d4-495a-8930-36680dd60140",
+      "comment": "",
+      "command": "open",
+      "target": "/oprs-web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "72523cb8-a3f0-4558-b819-d02ce4b233d5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x660",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "73833aff-5e91-4071-8032-9d2e3c7a97bf",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign In",
+      "targets": [
+        ["linkText=Sign In", "linkText"],
+        ["css=.fl-right > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign In')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/oprs-web/login/show.do')]", "xpath:href"],
+        ["xpath=//div/div/div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "da5cb3ce-cad6-4fee-978f-9bde18568b62",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-label-group:nth-child(2) > label",
+      "targets": [
+        ["css=.form-label-group:nth-child(2) > label", "css:finder"],
+        ["xpath=//form[@id='bookingsForm']/div/div/div/div/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'User Name')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d01f66f4-ac80-4e9d-90c3-62d82b943184",
+      "comment": "",
+      "command": "type",
+      "target": "id=userName",
+      "targets": [
+        ["id=userName", "id"],
+        ["name=userName", "name"],
+        ["css=#userName", "css:finder"],
+        ["xpath=//input[@id='userName']", "xpath:attributes"],
+        ["xpath=//form[@id='bookingsForm']/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "xyz"
+    }, {
+      "id": "f894a12c-c63a-437c-ba8f-dfd07145ecdc",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.form-label-group:nth-child(2) > label",
+      "targets": [
+        ["css=.form-label-group:nth-child(2) > label", "css:finder"],
+        ["xpath=//form[@id='bookingsForm']/div/div/div/div/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'User Name')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1377fdf5-d61c-4465-8a4f-2a4d030de5aa",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.form-label-group:nth-child(2) > label",
+      "targets": [
+        ["css=.form-label-group:nth-child(2) > label", "css:finder"],
+        ["xpath=//form[@id='bookingsForm']/div/div/div/div/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'User Name')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "cc717986-43b9-4a12-9cc7-ec2615230d42",
+    "name": "mouseover(signin)",
+    "commands": [{
+      "id": "eabcaa5c-5945-45c8-86a1-ba16194dd0c7",
+      "comment": "",
+      "command": "open",
+      "target": "/oprs-web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b2da9ec9-94c5-41e8-b44a-362457935873",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x660",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c2e85c3f-64a0-4102-8070-117a5bedeff8",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Sign In",
+      "targets": [
+        ["linkText=Sign In", "linkText"],
+        ["css=.fl-right > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign In')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/oprs-web/login/show.do')]", "xpath:href"],
+        ["xpath=//div/div/div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b488a11e-07a3-4972-a9a2-5d4d180af203",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Sign In",
+      "targets": [
+        ["linkText=Sign In", "linkText"],
+        ["css=.fl-right > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign In')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/oprs-web/login/show.do')]", "xpath:href"],
+        ["xpath=//div/div/div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f555285b-0425-4e15-a2fd-88fb213bd8e3",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Sign In",
+      "targets": [
+        ["linkText=Sign In", "linkText"],
+        ["css=.fl-right > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign In')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/oprs-web/login/show.do')]", "xpath:href"],
+        ["xpath=//div/div/div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign In')]", "xpath:innerText"]
+      ],
+      "value": "Sign In"
+    }, {
+      "id": "67b336e8-98ee-4fa6-9f78-bbe0ed6752e9",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Sign In",
+      "targets": [
+        ["linkText=Sign In", "linkText"],
+        ["css=.fl-right > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign In')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/oprs-web/login/show.do')]", "xpath:href"],
+        ["xpath=//div/div/div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "29948478-6455-4eb7-ac9e-4729bb8a909a",
+    "name": "editable",
+    "commands": [{
+      "id": "7dc931ac-5bde-4a9d-a357-03d483f2f821",
+      "comment": "",
+      "command": "open",
+      "target": "/oprs-web/user/add.do",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7b688e3f-eb02-4718-a990-1915798bb75e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x660",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f93a9388-0826-485e-ae7b-6cd0a6981eea",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cancel Tickets",
+      "targets": [
+        ["linkText=Cancel Tickets", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Cancel Tickets')]", "xpath:link"],
+        ["xpath=//div[@id='navbarCollapse']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/oprs-web/guest/ticket/cancel.do')]", "xpath:href"],
+        ["xpath=//nav/div/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cancel Tickets')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9849e56-85f6-4c7b-a43c-4cbb88069351",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-label-group:nth-child(3) > label",
+      "targets": [
+        ["css=.form-label-group:nth-child(3) > label", "css:finder"],
+        ["xpath=//div[@id='home']/div/div/label", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "516cc9e1-36a0-4ffc-811d-f323db571fdd",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=searchBtn",
+      "targets": [
+        ["id=searchBtn", "id"],
+        ["name=searchBtn", "name"],
+        ["css=#searchBtn", "css:finder"],
+        ["xpath=//input[@id='searchBtn']", "xpath:attributes"],
+        ["xpath=//div[@id='home']/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9966de45-5519-4eb6-9450-b367ebe82082",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=searchBtn",
+      "targets": [
+        ["id=searchBtn", "id"],
+        ["name=searchBtn", "name"],
+        ["css=#searchBtn", "css:finder"],
+        ["xpath=//input[@id='searchBtn']", "xpath:attributes"],
+        ["xpath=//div[@id='home']/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "df42fde6-cada-4f11-9b22-c676b0aab376",
+      "comment": "",
+      "command": "verifyEditable",
+      "target": "id=pnrPrefixWithTktNo",
+      "targets": [
+        ["id=pnrPrefixWithTktNo", "id"],
+        ["name=pnrPrefixWithTktNo", "name"],
+        ["css=#pnrPrefixWithTktNo", "css:finder"],
+        ["xpath=//input[@id='pnrPrefixWithTktNo']", "xpath:attributes"],
+        ["xpath=//div[@id='home']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "97596fdc-b364-4ea7-84ff-674f37166727",
+      "comment": "",
+      "command": "type",
+      "target": "id=pnrPrefixWithTktNo",
+      "targets": [
+        ["id=pnrPrefixWithTktNo", "id"],
+        ["name=pnrPrefixWithTktNo", "name"],
+        ["css=#pnrPrefixWithTktNo", "css:finder"],
+        ["xpath=//input[@id='pnrPrefixWithTktNo']", "xpath:attributes"],
+        ["xpath=//div[@id='home']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "1234"
+    }]
+  }, {
+    "id": "0788a0f2-fe0b-4be6-b367-6df4dee95443",
+    "name": "booknowbutton",
+    "commands": [{
+      "id": "0d732b8b-9f88-46ee-8fa5-34ea5a84829a",
+      "comment": "",
+      "command": "open",
+      "target": "/oprs-web/guest/home.do?h=1&lange=EN",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e280f947-245b-47fa-b6e6-d725a1760a5c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x660",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "557432b3-32ce-4e86-a038-711ef81edcbb",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Package Tours",
+      "targets": [
+        ["linkText=Package Tours", "linkText"],
+        ["css=.nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Package Tours')]", "xpath:link"],
+        ["xpath=//div[@id='navbarCollapse']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/oprs-web/pkg/tours.do')]", "xpath:href"],
+        ["xpath=//nav/div/div/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Package Tours')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "89de1755-f055-4b3b-9272-c5ed87a765d8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Package Tours",
+      "targets": [
+        ["linkText=Package Tours", "linkText"],
+        ["css=.nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Package Tours')]", "xpath:link"],
+        ["xpath=//div[@id='navbarCollapse']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/oprs-web/pkg/tours.do')]", "xpath:href"],
+        ["xpath=//nav/div/div/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Package Tours')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9dcdf97c-a6ad-4995-a3f6-9c2de55f45b6",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn:nth-child(5)",
+      "targets": [
+        ["css=.btn:nth-child(5)", "css:finder"],
+        ["xpath=//input[@value='Book Now']", "xpath:attributes"],
+        ["xpath=//form[@id='bookingsForm']/section/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4411125-237a-451c-8fb3-875484181734",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn:nth-child(5)",
+      "targets": [
+        ["css=.btn:nth-child(5)", "css:finder"],
+        ["xpath=//input[@value='Book Now']", "xpath:attributes"],
+        ["xpath=//form[@id='bookingsForm']/section/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e126132-3f39-4ecc-a8b3-df383503fa49",
+      "comment": "",
+      "command": "assertValue",
+      "target": "css=.btn:nth-child(5)",
+      "targets": [
+        ["css=.btn:nth-child(5)", "css:finder"],
+        ["xpath=//input[@value='Book Now']", "xpath:attributes"],
+        ["xpath=//form[@id='bookingsForm']/section/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Book Now"
+    }, {
+      "id": "199310c6-7092-4bf4-bb9a-40ce6eec80ee",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.btn:nth-child(5)",
+      "targets": [
+        ["css=.btn:nth-child(5)", "css:finder"],
+        ["xpath=//input[@value='Book Now']", "xpath:attributes"],
+        ["xpath=//form[@id='bookingsForm']/section/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "50f18a8f-ff7f-40d5-9194-ce3e4d190a50",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.btn:nth-child(5)",
+      "targets": [
+        ["css=.btn:nth-child(5)", "css:finder"],
+        ["xpath=//input[@value='Book Now']", "xpath:attributes"],
+        ["xpath=//form[@id='bookingsForm']/section/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "afc792c3-66ff-4a7a-b3c3-0dce9c720d3f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["bd0ea135-2390-4a3b-9aaa-cba2c7dc0d7e"]
+  }],
+  "urls": ["https://ksrtc.in/"],
+  "plugins": []
+}
